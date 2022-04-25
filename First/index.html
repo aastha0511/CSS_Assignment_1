@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Student Form</title>
+  </head>
+  <body>
+    <h1 class="heading">Student Registration Form</h1>
+    <form>
+      <div class="main_form">
+        <label for="name" class="label">Name :</label>
+        <input type="text" id="name" name="name" placeholder="Enter full name" size="25"/>
+      </div>
+      <div class="main_form">
+        <label for="Fname" class="label">Father's Name :</label>
+        <input type="text" id="Fname" name="Fname" size="25" />
+      </div>
+      <div class="main_form">
+        <label for="name" class="label">Mother's Name :</label>
+        <input type="text" id="Mname" name="Mname" size="25" />
+      </div>
+      <div class="main_form">
+        <label for="phone" class="label">Phone Number :</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="017xxxxxxxx"
+          size="25"
+        />
+      </div>
+      <div class="main_form">
+        <label for="email" class="label">Email :</label>
+        <input type="text" id="email" name="email" placeholder="sample@example.com" size="25"/>
+      </div>
+      <div class="main_form">
+        <label for="gender" class="label">Gender :</label>
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Others" /> Others
+      </div>
+      <div class="main_form" id="dob_main">
+        <label for="dob" class="label">Date of Birth :</label>
+        <div>
+          <input type="number" name="date" id="dob" />
+          -
+          <input type="number" name="date" id="dob" />
+          -
+          <input type="number" name="date" id="dob"/>
+          <i>(dd-mm-yyyy)</i>
+        </div>
+      </div>
+      <div class="main_form">
+        <label for="address" class="label">Address :</label>
+        <input type="text" name="address" id="address" placeholder="Street:-  House:-  Road:-" size="45"/>
+      </div>
+      <div class="main_form">
+        <label for="Blood_grp" class="label">Blood Group :</label>
+        <select name="Blood_grp" id="Blood_grp">
+          <option value="Select">Select</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+      </div>
+      <div class="main_form">
+        <label for="department" class="label">Department :</label>
+        <input type="radio" name="CSE" /> CSE
+        <input type="radio" name="EEE" /> EEE
+        <input type="radio" name="BBA" /> BBA
+      </div>
+      <div class="main_form">
+        <label for="course" class="label">Course :</label>
+        <input type="checkbox" /> C 
+        <input type="checkbox" /> C++
+        <input type="checkbox" /> Java 
+        <input type="checkbox" /> AI
+        <input type="checkbox" /> Machine Learning
+        <input type="checkbox" /> Robotics
+      </div>
+      <div class="main">
+        <label for="photo" class="label">Photo :</label>
+        <input type="file" id="filechosen" />
+      </div>
+      <div id="button" class="main_form">
+        <label class="label">
+          <a href="#">Submit</a>
+          <input type="reset" id="reset" />
+        </label>
+      </div>
+    </form>
+    <div class="table">
+      <table border="1">
+        <tr>
+          <th>SNo</th>
+          <th>Name</th>
+          <th>Phone No</th>
+          <th>Gender</th>
+          <th>City</th>
+          <th>Hobbies</th>
+        </tr>
+        <tr>
+          <td>1.</td>
+          <td>Sia</td>
+          <td>7345623578</td>
+          <td>Female</td>
+          <td>Gurgaon</td>
+          <td>Basketball</td>
+        </tr>
+        <tr>
+          <td>2.</td>
+          <td>Tom</td>
+          <td>7368564832</td>
+          <td>Male</td>
+          <td>Noida</td>
+          <td>Table Tennis</td>
+        </tr>
+        <tr>
+          <td>3.</td>
+          <td>Harshita</td>
+          <td>8432567846</td>
+          <td>Female</td>
+          <td>Mumbai</td>
+          <td>Volleyball</td>
+        </tr>
+        <tr>
+          <td>4.</td>
+          <td>Sid</td>
+          <td>9867523234</td>
+          <td>Male</td>
+          <td>Jaipur</td>
+          <td rowspan="2">Chess</td>
+        </tr>
+        <tr>
+          <td>5.</td>
+          <td>Nishtha</td>
+          <td>9765432190</td>
+          <td>Female</td>
+          <td>Indore</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
